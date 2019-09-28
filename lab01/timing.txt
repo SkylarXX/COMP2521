@@ -1,0 +1,25 @@
+Input	Initial	Has	    Number	 AvgTime  AvgTime
+Size	Order	Dups    of runs	 forusel  forsort
+5000	random	no	      5	      0.15s    0.004s
+5000	sorted	no	      5       0.24s    0.004s
+5000	reverse	no	      5       0.20s    0.004s
+5000	random	yes	      5       0.15s    0.004s
+5000	sorted	yes	      5       0.21s    0.008s
+5000	reverse	yes	      5       0.017s   0.008s
+10000	random	no	      5       0.47s    0.008s
+10000	sorted	no	      5       0.75s    0.004s
+10000	reverse	no	      5       0.030s   0.004s
+10000	random	yes	      5       0.46s    0.008s
+10000	sorted	yes	      5       0.76s    0.004s
+10000	reverse	yes	      5       0.027s   0.004s
+
+comments:
+1.The performance of sorting is quite stable.
+2.Generally,the time used for sorting reverse number lists is quicker than sorting
+the random and sorted one, since reverse number lists only need to put the next 
+data before the head of the linked list, which is able to save time that used for 
+search the whole linked list.
+3.In conclusion, its quite time consuming to sort the linked list via IntList.c. 
+The reason for that might be the algorithm of IntList.c is much more 
+complicated than the algorithm for sorting command.
+

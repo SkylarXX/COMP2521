@@ -1,0 +1,25 @@
+Results for Tests on 5000 values
+
+Depth = depth of tree, Cost = average #comparisons per search
+
+
+             Ascending Order        Prefix Order        Random Order
+Insert
+Method       Depth      Cost     Depth      Cost     Depth      Cost
+            
+L         ___5000___  ___3114__  __13__  ___ 12____    28__  ___16
+
+A         ___5000___  ___1887____  2954__  _ 1115___  _28__  ___16
+
+R         ___2492___  ___952_____  1774___   674___  _ 27_  __  15
+
+B         ___206___  ____63____   _20___  __ 14_____   23___    13
+
+S         ___5000___  ___24____  __5000___  _24______  31____   23
+
+V         ____13____  ___12_____  _14_____  _12______  15_____  12
+
+
+Notes (what the above indicates):
+1.AVL Tree approach is the most efficient way to insert and search for all kinds of number list, since it is a BST and the time complexity for this method is always O(log(n)).
+2.The cost for random order number is obviously less than other two order, since it doesn't need to do repeated work when the size of the number increasing.
